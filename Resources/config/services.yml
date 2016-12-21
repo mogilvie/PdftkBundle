@@ -1,0 +1,10 @@
+services:
+    pdftk.managers.pdftk:
+        class: Mediavince\Bundle\PdftkBundle\Managers\PdftkManager
+        arguments: ["%kernel.cache_dir%", "%pdftk%"]
+
+# example to implement in your own services.yml
+#    app.manager.document:
+#        class: AppBundle\Manager\DocumentManager
+#        arguments:
+#            - "@pdftk.managers.pdftk"

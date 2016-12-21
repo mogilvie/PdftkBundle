@@ -1,0 +1,25 @@
+{
+    "name": "mediavince/pdftk-bundle",
+    "type": "symfony-bundle",
+    "title": "MediavincePdftkBundle",
+    "description": "PDFTK for Symfony",
+    "keywords": ["interactive", "pdf", "pdftk", "symfony2", "bundle"],
+    "license": "MIT",
+    "version": "1.0.0",
+    "author": {
+        "name": "Mediavince",
+        "url": "http://www.mediavince.com"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/mediavince/PdftkBundle.git"
+    },
+    "require": {
+        "php":             ">=5.4.0",
+        "symfony/symfony": ">=2.1"
+    },
+    "autoload": {
+        "psr-0": { "Mediavince\\Bundle\\PdftkBundle": "" }
+    },
+    "target-dir": "Mediavince/Bundle/PdftkBundle"
+}
