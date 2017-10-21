@@ -20,7 +20,7 @@ $ sudo apt-get install pdftk
     {
         $bundles = array(
             //...
-            new Mediavince\Bundle\MediavincePdftkBundle(),
+            new SpecShaper\PdftkBundle\SpecShaperPdftkBundle(),
         );
         return $bundles;
     }

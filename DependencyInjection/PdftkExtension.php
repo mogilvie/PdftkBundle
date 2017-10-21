@@ -1,6 +1,6 @@
 <?php
 
-namespace Mediavince\Bundle\PdftkBundle\DependencyInjection;
+namespace SpecShaper\PdftkBundle\DependencyInjection;
 
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\Config\FileLocator;

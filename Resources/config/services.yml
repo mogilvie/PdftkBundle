@@ -1,6 +1,6 @@
 services:
     pdftk.managers.pdftk:
-        class: Mediavince\Bundle\PdftkBundle\Managers\PdftkManager
+        class: SpecShaper\PdftkBundle\Managers\PdftkManager
         arguments: ["%kernel.cache_dir%", "%pdftk%"]
 
 # example to implement in your own services.yml

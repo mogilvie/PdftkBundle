@@ -6,7 +6,7 @@
  * @author VHoude
  */
 
-namespace Mediavince\Bundle\PdftkBundle\Managers;
+namespace SpecShaper\PdftkBundle\Managers;
 
 class PdftkManager
 {

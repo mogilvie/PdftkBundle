@@ -1,25 +1,29 @@
 {
-    "name": "mediavince/pdftk-bundle",
+    "name": "specshaper/pdftk-bundle",
     "type": "symfony-bundle",
-    "title": "MediavincePdftkBundle",
+    "title": "SpecShaperPdftkBundle",
     "description": "PDFTK for Symfony",
     "keywords": ["interactive", "pdf", "pdftk", "symfony2", "bundle"],
     "license": "MIT",
     "version": "1.0.0",
     "author": {
-        "name": "Mediavince",
-        "url": "http://www.mediavince.com"
+        "name": "Mark Ogilvie",
+        "url": "http://parolla.ie"
     },
     "repository": {
         "type": "git",
-        "url": "git://github.com/mediavince/PdftkBundle.git"
+        "url": "git://github.com/mogilvie/PdftkBundle.git"
     },
     "require": {
-        "php":             ">=5.4.0",
-        "symfony/symfony": ">=2.1"
+        "php":             ">=7.1",
+        "symfony/symfony": ">=3.2"
     },
     "autoload": {
-        "psr-0": { "Mediavince\\Bundle\\PdftkBundle": "" }
+        "psr-4": { "SpecShaper\\PdftkBundle\\": "" }
     },
-    "target-dir": "Mediavince/Bundle/PdftkBundle"
+    "extra" : {
+    "branch-alias" : {
+            "dev-master" : "1.0.x-dev"
+        }
+    }
 }

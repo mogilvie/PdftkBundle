@@ -1,6 +1,6 @@
 <?php
 
-namespace Mediavince\Bundle\PdftkBundle\Tests\Controller;
+namespace SpecShaper\PdftkBundle\Tests\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Test\WebTestCase;
 

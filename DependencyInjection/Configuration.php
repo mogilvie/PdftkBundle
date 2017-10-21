@@ -1,6 +1,6 @@
 <?php
 
-namespace Mediavince\Bundle\PdftkBundle\DependencyInjection;
+namespace SpecShaper\PdftkBundle\DependencyInjection;
 
 use Symfony\Component\Config\Definition\Builder\TreeBuilder;
 use Symfony\Component\Config\Definition\ConfigurationInterface;
