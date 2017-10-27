@@ -1,7 +1,6 @@
 services:
-    pdftk.managers.pdftk:
-        class: SpecShaper\PdftkBundle\Managers\PdftkManager
-        arguments: ["%kernel.cache_dir%", "%pdftk%"]
+    SpecShaper\PdftkBundle\Managers\PdftkManager:
+        arguments: ["%kernel.cache_dir%", "%spec_shaper_pdftk.parameters%"]
 
 # example to implement in your own services.yml
 #    app.manager.document:

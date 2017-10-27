@@ -1,24 +1,23 @@
 {
-    "name": "specshaper/pdftk-bundle",
-    "type": "symfony-bundle",
-    "title": "SpecShaperPdftkBundle",
-    "description": "PDFTK for Symfony",
-    "keywords": ["interactive", "pdf", "pdftk", "symfony2", "bundle"],
-    "license": "MIT",
-    "version": "1.0.0",
-    "author": {
-        "name": "Mark Ogilvie",
-        "url": "http://parolla.ie"
+    "name" : "specshaper/pdftk-bundle",
+    "type" : "symfony-bundle",
+    "description" : "Bundle provides a service for encoding via pdftk.",
+    "homepage": "https://github.com/mogilvie/PdftkBundle",
+    "authors" : [{
+        "name" : "Mark Ogilvie",
+        "email" : "mark.ogilvie@ogilvieconsulting.net"
+    }],
+    "keywords" : [
+        "pdftk bundle"
+    ],
+    "license" : [
+        "MIT"
+    ],
+    "require" : {
+        "php": ">=7.1",
+        "symfony/symfony": "^3.2"
     },
-    "repository": {
-        "type": "git",
-        "url": "git://github.com/mogilvie/PdftkBundle.git"
-    },
-    "require": {
-        "php":             ">=7.1",
-        "symfony/symfony": ">=3.2"
-    },
-    "autoload": {
+    "autoload" : {
         "psr-4": { "SpecShaper\\PdftkBundle\\": "" }
     },
     "extra" : {

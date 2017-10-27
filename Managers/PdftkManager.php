@@ -8,6 +8,9 @@
 
 namespace SpecShaper\PdftkBundle\Managers;
 
+use Symfony\Component\Process\Exception\ProcessFailedException;
+use Symfony\Component\Process\Process;
+
 class PdftkManager
 {
     const FILE_PREFIX = 'pdftk_';
@@ -169,6 +172,31 @@ class PdftkManager
             if ((\strstr($info['basename'], self::FILE_PREFIX) !== false) && ($info['dirname'] == $this->temporaryFolder))
                 \unlink($path);
         }
+    }
+
+    public function encrypt($path, $ownerPw, $userPw = null, $isPrintable = false)
+    {
+
+       // pdftk 1.pdf output 1.128.pdf owner_pw foo user_pw baz allow printing
+        $commandline = 'pdftk "' . $path .'.pdf" output "'  . $path .'.128.pdf" owner_pw ' . $ownerPw;
+
+        if($userPw !== null){
+            $commandline .= ' user_pw ' . $userPw;
+        }
+
+        if($isPrintable){
+            $commandline .= ' allow printing';
+        }
+
+        $process = new Process($commandline);
+        $process->run();
+
+        // executes after the command finishes
+        if (!$process->isSuccessful()) {
+            throw new ProcessFailedException($process);
+        }
+        echo $process->getOutput();
+
     }
 
     ##################
