@@ -18,10 +18,5 @@
     },
     "autoload" : {
         "psr-4": { "SpecShaper\\PdftkBundle\\": "" }
-    },
-    "extra" : {
-    "branch-alias" : {
-            "dev-master" : "1.0.x-dev"
-        }
     }
 }

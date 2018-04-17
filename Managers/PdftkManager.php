@@ -178,7 +178,7 @@ class PdftkManager
     {
 
        // pdftk 1.pdf output 1.128.pdf owner_pw foo user_pw baz allow printing
-        $commandline = 'pdftk "' . $path .'.pdf" output "'  . $path .'.128.pdf" owner_pw ' . $ownerPw;
+        $commandline = 'pdftk ' . $path .'.pdf output '  . $path .'.pdf owner_pw ' . $ownerPw;
 
         if($userPw !== null){
             $commandline .= ' user_pw ' . $userPw;
