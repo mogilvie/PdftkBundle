@@ -174,11 +174,11 @@ class PdftkManager
         }
     }
 
-    public function encrypt($path, $ownerPw, $userPw = null, $isPrintable = false)
+    public function encrypt($path, $newPath, $ownerPw, $userPw = null, $isPrintable = false)
     {
 
        // pdftk 1.pdf output 1.128.pdf owner_pw foo user_pw baz allow printing
-        $commandline = 'pdftk ' . $path .'.pdf output '  . $path .'.pdf owner_pw ' . $ownerPw;
+        $commandline = 'pdftk ' . $path .'.pdf output '  . $newPath .'.pdf owner_pw ' . $ownerPw;
 
         if($userPw !== null){
             $commandline .= ' user_pw ' . $userPw;
