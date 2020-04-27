@@ -19,8 +19,14 @@ class Configuration implements ConfigurationInterface
     public function getConfigTreeBuilder()
     {
 
-        $treeBuilder = new TreeBuilder();
-        $treeBuilder->root('spec_shaper_pdftk');
+        $treeBuilder = new TreeBuilder('spec_shaper_pdftk');
+
+        if (method_exists($treeBuilder, 'getRootNode')) {
+            $rootNode = $treeBuilder->getRootNode();
+        } else {
+            // for symfony/config 4.1 and older
+            $rootNode = $treeBuilder->root('spec_shaper_encrypt');
+        }
 
         return $treeBuilder;
     }
