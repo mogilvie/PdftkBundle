@@ -195,7 +195,7 @@ class PdftkManager
             $commandline .= ' allow printing';
         }
 
-        $process = new Process($commandline);
+        $process = new Process([$commandline]);
         $process->run();
 
         // executes after the command finishes
